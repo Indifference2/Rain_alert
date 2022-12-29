@@ -7,14 +7,14 @@ parameters = {
 }
 
 my_email = "MY EMAIL" # HERE PUT YOUR EMAIL
-password = "" #HERE PUT YOUR CODE VERIFICATION EMAIL
+auth_token = "" #HERE PUT YOUR auth_token
 
 
 def will_rain():
     if id_weather < 600:
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
-            connection.login(user=my_email, password=password)
+            connection.login(user=my_email, password=auth_token)
             connection.sendmail(from_addr=my_email,
                                 to_addrs=my_email,
                                 msg=f"Subject:Weather Data\n\n Today, it's gonna rain")
