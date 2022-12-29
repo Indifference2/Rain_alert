@@ -3,11 +3,11 @@ import smtplib
 parameters = {
     "lat": -34.6863791, #LATITUDE FROM YOUR CITY
     "lon": -58.6572849, #LONGITUDE FROM YOUR CITY
-    "APPID": "4fe884576ecc143a3d858ffd7049a93f", # YOU APP ID, CREATE A ACCOUNT IN openweathermap for a API authentication
+    "APPID": "YOUR APP ID HERE", # YOU APP ID, CREATE A ACCOUNT IN openweathermap for a API authentication
 }
 
 my_email = "MY EMAIL" # HERE PUT YOUR EMAIL
-auth_token = "" #HERE PUT YOUR auth_token
+auth_token = "" #HERE PUT YOUR AUTH_TOKEN FROM YOUR EMAIL
 
 
 def will_rain():
